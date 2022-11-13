@@ -33,7 +33,7 @@
 
   <div class="jumbo mb-0 text-bg-dark rounded-0">
       <div class="container-fluid py-5 ">
-        <h1 class="display-5 fw-bold">Welcome to <?php echo $name; ?> Forum</h1>
+        <h1 class="display-5">Welcome to <?php echo $name; ?> Forum</h1>
         <p id="jumbo_p1" class="col-md-8 fs-4"><?php echo $desc; ?></p>
         <hr>
         <p id="jumbo_p2"><b><u> Rules:- </b></u> <BR>1. No Spam / Advertising / Self-promote in the forums · 2. Do not post copyright-infringing material · 3. Do not post “offensive” posts, links or images   </p>

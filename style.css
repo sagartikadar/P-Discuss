@@ -120,9 +120,13 @@ nav ul li a:hover{
   
  }
  #jumbo-th{
-    background-color:rgb(215 215 215) !important;
+    /* background-color:rgb(215 215 215) !important; */
+    background-color:#f6f8fa !important;
  }
  .jumbo h1{
+    font-family: 'Kanit', sans-serif !important;
+ }
+ #jumbo-h2{
     font-family: 'Kanit', sans-serif !important;
  }
  

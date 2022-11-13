@@ -33,7 +33,8 @@
 
   <div class="jumbo mb-0 text-bg-light rounded-0" id="jumbo-th">
       <div class="container-fluid py-1">
-        <h1 class="display-5 fw-bold"><?php echo $title; ?></h1>
+        <h2 style="font-family: 'Secular One', sans-serif";><u>Question:</u></h2>
+        <h2 class="display-5" id="jumbo-h2"><?php echo $title; ?></h2>
         <p id="jumbo_p1" class="col-md-8 fs-4"><?php echo $desc; ?></p>
         <hr>
         <p id="jumbo_p2"><b><u> Posted by:</b></u>  Sagar Tikadar</p>

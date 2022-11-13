@@ -1,0 +1,161 @@
+/* .container::before{
+    content: "";
+
+     background: url('img/bg1.jpg')  no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 150%;
+    width: 100%;
+    z-index: -6;
+    opacity: 0.9;
+    background-position: -7rem 20rem;
+} */
+
+#l-title{
+    margin-right: 110px;
+    font-family: 'Kanit', sans-serif !important;
+    font-size: 27px;
+    color: white !important;
+}
+.n-ul{
+    font-size: 20px;
+    
+}
+nav ul li a{
+    margin:0px 20px;
+    color: white !important;
+    font-family: 'Secular One', sans-serif !important;
+}
+nav ul li a:hover{
+    color: red !important;
+    
+}
+.navbar{
+    box-shadow:0px 0px 18px white ;
+   
+} 
+.navbar::before{                                        
+    content: "";
+
+     background-color: black !important;
+    position: absolute !important;
+    top: 0px !important;
+    left: 0px !important;
+    height: 100% !important;
+    width: 100% !important;
+    z-index: -1 !important;
+    opacity: 0.9 !important;
+   
+} 
+.s-box{
+   border-radius: 30px !important;
+   padding-right: 93px !important;
+}
+@media(max-width:600px){
+    .ss-box{
+        margin-bottom: 4px;
+    }
+    .carousel-item img{
+        height:200px !important; 
+        width:100%;
+    }
+    .card{
+        margin:4px auto;
+        box-shadow: 0px 0px 16px rgb(118 118 118);
+    }
+    .text-center{
+        font-size: 25px !important;
+    }
+}
+.l-button{
+    font-family: 'Secular One', sans-serif !important;
+  
+}
+
+.s-button{
+    font-family: 'Kanit', sans-serif !important;
+}
+
+/* .carousel img{
+    width:100% !important;
+    height:360px;
+  } */
+
+  .cate{
+    display:inline-block;
+
+  }
+  .card{
+    box-shadow: 0px 0px 16px rgb(118 118 118);
+    font-family: 'Ubuntu', sans-serif;
+  }
+  .text-center{
+    font-family: 'Kanit', sans-serif !important;
+    font-weight: bold;
+    font-size: 40px;
+    background-color: white;
+    /* background-color: rgb(190, 185, 185); */
+    margin-top: 0px !important;
+    padding: 6px;
+    text-shadow: 0px 0px 5px white;
+    /* background-image:linear-gradient(to right bottom, rgb(74, 73, 73),rgb(190, 190, 190) ) ; */
+    box-shadow:0px 0px 18px black ;
+   
+  }
+  .card-img-top{
+    height: 141px !important;
+  }
+ #footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+   
+ }
+
+
+ /* Thread_list_css */
+ .jumbo{
+    padding-left: 3rem !important;
+  
+ }
+ #jumbo-th{
+    background-color:rgb(215 215 215) !important;
+ }
+ .jumbo h1{
+    font-family: 'Kanit', sans-serif !important;
+ }
+ 
+ .jumbo p{
+    /* font-family: 'Baloo Bhai 2', cursive !important;
+    font-weight: 50 !important; */
+    font-family: 'Ubuntu', sans-serif !important;
+ }
+ #jumbo_p1{
+    font-size: 20px !important;
+ }
+ /* #jumbo_p2{
+    color: red;
+ } */
+ hr{
+    margin: 0px 0px !important;
+ }
+ .py-5 {
+    padding-top: 1rem!important;
+    padding-bottom: 1rem!important;
+}
+ /* #ques-h5{
+    display: inline-block !important;
+ }*/
+ #ques-pic{
+    border-radius: 100px;
+  }  
+
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+    z-index: 999999;
+  }
+  
+  .navbar-toggler {
+    border: 2px solid white !important;
+  } 

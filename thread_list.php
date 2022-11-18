@@ -1,3 +1,6 @@
+
+
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -11,6 +14,7 @@
   <body>
     <?php include 'parts/header.php'; ?>
     <?php include 'parts/conn.php'; ?>
+    <?php include 'questions.php'; ?>
 
    
         
@@ -28,26 +32,37 @@
     
      }
 
+    
+
   ?>
   
-
+   
   <div class="jumbo mb-0 text-bg-dark rounded-0">
       <div class="container-fluid py-5 ">
-        <h1 class="display-5">Welcome to <?php echo $name; ?> Forum</h1>
+        <h1 class="display-6">Welcome to <?php echo $name; ?> Forum</h1>
         <p id="jumbo_p1" class="col-md-8 fs-4"><?php echo $desc; ?></p>
         <hr>
         <p id="jumbo_p2"><b><u> Rules:- </b></u> <BR>1. No Spam / Advertising / Self-promote in the forums · 2. Do not post copyright-infringing material · 3. Do not post “offensive” posts, links or images   </p>
+      <button  type="button" class="btn btn-success mx-2 a-button " data-bs-toggle="modal" data-bs-target="#questionModal">Ask a Question</button>
       </div>
     </div>
+
+    <!-- form -->
+ 
+    
 <!-- Question -->
     <h2 class="text-center my-4"> Browse Questions</h2>
+    <!-- <button  type="button" class="btn btn-success mx-2  a-button" data-bs-toggle="modal" data-bs-target="#questionModal">Ask a Question</button> -->
+
     <div class="container my-3">
 
     <?php
     $id=$_GET['catid'];
     $sql="SELECT * FROM `threads` WHERE thread_cat_id=$id";
     $result= mysqli_query($conn, $sql);
+    $noResult=true;
     while($row=mysqli_fetch_assoc($result)){
+      $noResult=false;
     $id=$row['thread_id'];    
      $title=$row['thread_title'];    
      $desc=$row['thread_desc']; 
@@ -62,9 +77,17 @@
 </div>';
    
     }
-
+       if($noResult){
+        echo'<div class="jumbotron jumbotron-fluid">
+        <div class="container py-3">
+          <h1 class="display-4">No questions Found:</h1>
+         <a href="#"> <p class="lead" data-bs-toggle="modal" data-bs-target="#questionModal">Be the first person to ask a question.</p><a/>
+        </div>
+      </div>';
+       }
   ?>
 </div>
+
    
    
   

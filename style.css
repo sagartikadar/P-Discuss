@@ -170,3 +170,11 @@ nav ul li a:hover{
     font-family: 'Secular One', sans-serif !important;
  
   }
+
+  .c-button{
+   
+    font-family: 'Secular One', sans-serif !important;
+    float: right !important;
+    display: flex !important;
+ 
+  }

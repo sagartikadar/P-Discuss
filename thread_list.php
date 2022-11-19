@@ -6,7 +6,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Forum</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@700&family=Bree+Serif&family=Griffy&family=Kanit&family=Poor+Story&family=Raleway&family=Secular+One&family=Ubuntu&display=swap" rel="stylesheet">
@@ -54,7 +54,7 @@
     <h2 class="text-center my-4"> Browse Questions</h2>
     <!-- <button  type="button" class="btn btn-success mx-2  a-button" data-bs-toggle="modal" data-bs-target="#questionModal">Ask a Question</button> -->
 
-    <div class="container my-3">
+    <div class="container my-3 min-vh-100">
 
     <?php
     $id=$_GET['catid'];
@@ -69,6 +69,7 @@
 
      echo'<div class="media my-3">
      <img src="img/p-pic.jpg" width="45px" class="mr-3" id="ques-pic" alt="...">
+     <b>Sagar Tikadar</b>
      <div class="media-body">
  <h5 id="ques-h5" class="mt-0"><a href="thread.php?threadid='.$id.'">'.$title.'</a></h5>
  '.$desc.'

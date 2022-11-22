@@ -63,7 +63,7 @@ while($row=mysqli_fetch_assoc($result)){
 
  echo'<div class="media my-3">
  <img src="img/p-pic.jpg" width="45px" class="mr-3" id="ques-pic" alt="...">
-  Sagar Tikadar
+  <b>Sagar Tikadar</b>
  <div class="media-body">
 
 '.$comment.'

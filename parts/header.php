@@ -38,8 +38,44 @@
     </div>
   </div>
 </nav>
+<?php
+if(isset($_GET['signupsucess']) && $_GET['signupsucess']=="true"){
+  
+  echo '<div class="alert alert-success alert-dismissible fade show mb-0" role="alert">
+    <strong>Success!</strong> You have successfully signed up.You can login now.
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>';
+   }
+?>
+<!-- ********* -->
+<?php
+if(isset($_GET['signupsucess']) && $_GET['signupsucess']=="false"){
+  
+  echo '<div class="alert alert-danger alert-dismissible fade show mb-0" role="alert">
+  <strong>Error!</strong> Email already in use.Use different email.
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>';
+   }
+?>
+<!-- ********* -->
+<?php
+if(isset($_GET['signupsucess']) && $_GET['signupsucess']=="pfalse"){
+  
+  echo '<div class="alert alert-danger alert-dismissible fade show mb-0" role="alert">
+  <strong>Error!</strong> Passwords do not match.
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>';
+   }
+?>
+
+
   </header>
   <?php
    include 'parts/login.php';
    include 'parts/signup.php';
+ 
+  
    ?>
+<!-- <?php
+   include 'parts/signuphandler.php';
+   ?> -->

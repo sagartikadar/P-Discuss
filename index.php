@@ -14,7 +14,9 @@
   <body>
     <?php include 'parts/header.php'; ?>
     <?php include 'parts/conn.php'; ?>
-    <?php include 'parts/slider.php' ?>
+    <?php include 'parts/slider.php'; ?>
+    <?php include 'parts/signuphandler.php'; ?>
+
 
     <h2 class="text-center my-4">P-discuss - Browse Categories</h2>
     <div class="container my-3" id="ques">

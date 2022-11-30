@@ -38,6 +38,8 @@
     </div>
   </div>
 </nav>
+
+<!-- alerts -->
 <?php
 if(isset($_GET['signupsucess']) && $_GET['signupsucess']=="true"){
   

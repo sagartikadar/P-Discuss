@@ -1,4 +1,4 @@
-<!-- signup_handler -->
+
 
 <?php
 $showERROR="false";
